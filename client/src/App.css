@@ -1,0 +1,259 @@
+img {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar > a {
+  margin: 20px 60px;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: navy;
+  font-size: 1.5rem;
+  position: absolute;
+  z-index: 1;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: whitesmoke;
+  opacity:0.8;
+  backdrop-filter: blur(0.5rem);
+}
+
+.modal > * {
+  margin: 2rem;
+}
+
+.modal > h2 {
+  width: 60%;
+  text-align: center;
+}
+
+.out-of-time {
+  justify-content: center;
+}
+
+.find {
+  margin: 0 10px;
+  height: 180px;
+  width: 160px;
+  border: 0.25rem solid black;
+}
+
+.find-small {
+  height: 135px;
+  width: 120px;
+}
+
+.play {
+  background-color: orangered;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 0.25rem solid black;
+}
+
+.play:hover {
+  cursor: pointer;
+  background-color: rgb(255, 159, 124)
+}
+
+.stopwatch-container {
+  display: flex;
+  align-items: center;
+  background: lavenderblush;
+}
+
+.stopwatch-container > div {
+  width: 50%;
+  height: auto;
+}
+
+.stopwatch {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center
+}
+
+.time-up {
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  border-left: rem solid black;
+}
+
+.image-container > * {
+  margin: 0 10px;
+}
+
+.image-container > div {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: beige;
+  border: 0.25rem solid black;
+  padding: 0.25rem;
+}
+
+.selector > img {
+  width: 80px;
+  height: 80px;
+  border: 0.25rem solid black;
+  margin: 0.25rem;
+}
+
+.selector > img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.success-message {
+  background-color: greenyellow;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0.7;
+  padding: 1rem 0;
+}
+
+.failure-message {
+  background-color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0.7;
+  padding: 1rem 0;
+}
+
+.already-found {
+  background-color: yellow;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0.7;
+  padding: 1rem 0;
+}
+
+.game-over-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: lightgray;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.game-over-message {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.submit-button, .play-again-button {
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.submit-button {
+  background-color: turquoise;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 0.25rem solid black;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgb(0, 158, 142)
+}
+
+.play-again-button {
+  background-color: orangered;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 0.25rem solid black;
+}
+
+.play-again-button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 159, 124)
+}
+
+@media (max-width: 665px) {
+  .images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .find {
+    margin: 10px 0;
+  }
+}
